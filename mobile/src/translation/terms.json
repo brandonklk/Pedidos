@@ -1,3 +1,8 @@
 {
-    "msgError": "Campo obrigatorio"
+    "fieldMandatory": "Campo obrigatorio",
+    "labelMail": "E-mail",
+    "labelPassword": "Senha",
+    "mailInvalid": "E-mail invalido",
+    "minValue6": "Menor valor permitido de 6 digitos.",
+    "maxValue12": "Maior valor permitido de 12 digitos."
 }
