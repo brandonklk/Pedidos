@@ -9,6 +9,7 @@
     "knex:rollback": "knex migrate:rollback"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "celebrate": "^13.0.4",
     "cors": "^2.8.5",
     "expo": "^40.0.1",
