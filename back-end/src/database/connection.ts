@@ -8,7 +8,6 @@ const connection = knex({
   },
   pool: {
       afterCreate: (connection: any, callback: Function) => {
-        console.log(typeof(callback))
         connection.run('PRAGMA foreign_keys = ON', callback);
     }
   },

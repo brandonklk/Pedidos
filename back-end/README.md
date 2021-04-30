@@ -8,6 +8,7 @@
   - Knex
   - Typescript
   - Express
+  - Node-Cache
 
 ## Como rodar
 
