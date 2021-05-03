@@ -19,7 +19,7 @@ routes.post('/create-user', celebrate({
     body: Joi.object().keys({
       name: Joi.string().required(),
       email: Joi.string().required().email(),
-      password: Joi.string().required(),
+      password: Joi.string().required().max(15).min(8),
       phone: Joi.string(),
       avatar: Joi.string()
     })
@@ -31,6 +31,20 @@ routes.post('/authenticate', celebrate({
     password: Joi.string().required(),
   })
 }), userController.authenticate);
+
+routes.post('/generate-token-forgot-password', celebrate({
+  body: Joi.object().keys({
+    email: Joi.string().required().email(),
+  })
+}), userController.generateTokenForForgotPassword);
+
+routes.post('/forgot-password', celebrate({
+  body: Joi.object().keys({
+    email: Joi.string().required().email(),
+    password: Joi.string().required(),
+    token: Joi.string().required()
+  })
+}), userController.forgotPassword);
 
 // fim usuários
 

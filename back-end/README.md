@@ -9,15 +9,21 @@
   - Typescript
   - Express
   - Node-Cache
+  - Celebrate middleware
+  - Nodemailer
 
 ## Como rodar
 
 - Realizar o download do Node
-- Rodar `npm install` e `npm start`
+- Rodar `npm install` e `npm run dev`
 
-## Novas migrations
+## Novas migrations/tabela
 - `npx knex migrate:make nomeDaTabela`
-- `npx knex migrate:latest`
+
+## Criar banco com tabelas ou incluir uma nova tabela
+- `npx knex migrate:latest` ou
+- `npm run knex:migrate` ou
+- `yarn knex:migrate`
 
 ## Rollback na ultima tabela(migrate) criada
 - `npx knex migrate:rollback`
