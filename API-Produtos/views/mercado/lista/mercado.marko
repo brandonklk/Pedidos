@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado virtual</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .container iframe {
+      margin: 4em;
+      border: none;
+    }
+
+    .product {
+      border: 1px solid;
+      border-radius: 25px;
+      max-width: 280px;
+    }
+
+    .product p {
+      /* padding: 0px; */
+      /* margin: 0px; */
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Mercado virtual</h1>
+  <div class="container">
+    <div class="product" for(p in data.list)> 
+      <iframe width="150" height="150"
+      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={%27name%27:%27${p.name}%27,%20%27price%27:%20${p.price}}"></iframe>
+      <p>Nome: ${p.name}</p>
+      <p>Preço: ${p.price}</p>
+    </div>
+  </div>
+</body>
+</html>
