@@ -29,8 +29,8 @@ function render(input, out, __component, component, state) {
   marko_forEach(data.list, function(p) {
     var keyscope__11 = "[" + ((for__10++) + "]");
 
-    out.w("<div class=\"product\"> <iframe width=\"150\" height=\"150\" src=\"https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data={%22name%22:%22" +
-      marko_escapeXmlAttr(p.name) +
+    out.w("<div class=\"product\"> <iframe width=\"150\" height=\"150\" src=\"https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data={%22product%22:%22" +
+      marko_escapeXmlAttr(p.product) +
       "%22,%22price%22:" +
       marko_escapeXmlAttr(p.price) +
       ",%22description%22:%22" +
@@ -38,7 +38,7 @@ function render(input, out, __component, component, state) {
       "%22,%22img%22:%22" +
       marko_escapeXmlAttr(p.img) +
       "%22}\"></iframe><p>Produto: " +
-      marko_escapeXml(p.name) +
+      marko_escapeXml(p.product) +
       "</p><p>Preço: " +
       marko_escapeXml(p.price) +
       "</p><p>Descrição: " +

@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-const saltRounds = Math.floor(Math.random() * 18);
+const saltRounds = Math.floor(Math.random() * 12);
 
 export const encryptedPwd = async (pwd: string) => {
     return await bcrypt.hash(pwd, saltRounds);

@@ -118,3 +118,7 @@ dist
 #database
 src/database/database.sqlite
 src/database/test.sqlite
+
+##env
+
+src/envi.config.ts

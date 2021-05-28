@@ -41,9 +41,10 @@
   <div class="container">
     <div class="product" for(p in data.list)> 
       <iframe width="150" height="150"
-      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={%27name%27:%27${p.name}%27,%20%27price%27:%20${p.price}}"></iframe>
-      <p>Nome: ${p.name}</p>
+      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={%22name%22:%22${p.name}%22,%22price%22:${p.price},%22description%22:%22${p.description}%22,%22img%22:%22${p.img}%22}"></iframe>
+      <p>Produto: ${p.name}</p>
       <p>Preço: ${p.price}</p>
+      <p>Descrição: ${p.description}</p>
     </div>
   </div>
 </body>

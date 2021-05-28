@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 import connection from '../../database/connection';
 import { CategoriesInterface } from '../../interfaces/Categorie/Categorie-Interface';
+import env from '../../envi.config';
+import jwt from 'jsonwebtoken';
 
 const CategoryConnection = () => connection('categories');
 
@@ -15,6 +17,7 @@ class CategoryController {
 
     async createCategory(req: Request, res: Response) {
         const { name, parent: parent_id } = req.body;
+        const { authorization } = req.headers;
 
         try {
 
@@ -23,6 +26,8 @@ class CategoryController {
                 await CategoryConnection().insert({
                     name, parent_id
                 }).transacting(trx)
+
+                trx.commit();
             
             });
 

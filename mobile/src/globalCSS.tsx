@@ -26,11 +26,44 @@ export default StyleSheet.create({
     },
     buttonDefault: {
         width: '100%',
-        padding: 8,
+        padding: 12,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#99E599',
+        color: '#fff',
+        backgroundColor: '#007bff',
+        borderColor: '#007bff',
         borderRadius: 7,
+    },
+    containerButton: {
+        width: '100%',
+        padding: 8,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    action: {
+        color: '#fff',
+        backgroundColor: '#007bff',
+        borderRadius: 8,
+        height: 50,
+        width: '48%',
+        paddingHorizontal: 35,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    actionMoney: {
+        borderRadius: 8,
+        borderColor: '#DCDCDC',
+        height: 50,
+        width: '48%',
+        paddingHorizontal: 35,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textMoney: {
+        marginLeft: 8,
+        color: '#000000',
+        fontSize: 17,
+        fontWeight: 'bold',
     },
     textButton: {
         color: '#FFFFFF',
@@ -52,6 +85,30 @@ export default StyleSheet.create({
     msgErrorDefault: {
         color: 'red',
         fontSize: 15,
+    },
+    containerLoading: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    containerSafeArea: {
+        flex: 1,
+        marginHorizontal: 2,
+    },
+    messageListEmpty: {
+        textAlign: 'center',
+        justifyContent: 'center',
+        marginTop: 8,
+        fontSize: 24,
+        fontWeight: "bold",
+    },
+    modal: {
+        flex: 1,
+        margin: 5,
+        backgroundColor: '#D3D3D3',
+        justifyContent: 'center',
+        textAlign: 'center',
+        alignItems: 'center',
     }
 
 });

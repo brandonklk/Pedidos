@@ -12,8 +12,7 @@
 - Expo
 - Formik
 - Yup
-- Material-UI
-- Material-UI Icons
+- Native Base Components
 
 ## Instalar o expo no sua máquina
 - `npm install --global expo-cli`

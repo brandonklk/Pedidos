@@ -1,8 +1,18 @@
 {
-    "fieldMandatory": "Campo obrigatorio",
+    "fieldMandatory": "Campo obrigatório",
     "labelMail": "E-mail",
     "labelPassword": "Senha",
+    "labelConfirmPassword": "Confirmar Senha",
+    "labelName": "Nome",
+    "labelPhone": "Telefone",
+    "labelAvatar": "Imagem de usuário",
     "mailInvalid": "E-mail invalido",
-    "minValue6": "Menor valor permitido de 6 digitos.",
-    "maxValue12": "Maior valor permitido de 12 digitos."
+    "minValue8": "Menor valor permitido de 8 digitos.",
+    "maxValue15": "Maior valor permitido de 15 digitos.",
+    "createAccount": "Criar novo usuário",
+    "forgotPassword": "Esqueci minha senha",
+    "diffPassword": "Senhas diferentes",
+    "createNewUser": "Criar nova conta",
+    "createNewProduct": "Criar novo produto",
+    "labelToken": "Token de alteração de senha."
 }
